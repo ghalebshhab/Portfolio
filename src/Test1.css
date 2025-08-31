@@ -252,12 +252,24 @@ main {
         flex-wrap: wrap;
         gap: 1rem;
     }
+    .about{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+    }
 }
 
 @media (max-width: 480px) {
     header .pages button {
         padding: 5px 8px;
         font-size: 0.9rem;
+    }
+    .about{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
     }
     
     .lang {
