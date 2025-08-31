@@ -20,6 +20,7 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import BlurText from "./Animation/BlurText";
 import {
   BrowserRouter as Router,
   Routes,
@@ -87,7 +88,7 @@ export default function Test1() {
               <ShinyText
                 text="Welcome To Ghaleb Portfolio"
                 disabled={false}
-                speed={3}
+                speed={5}
                 className="custom-className"
               />
             </h1>
@@ -101,7 +102,7 @@ export default function Test1() {
                   backgroundColor: "rgba(21,21,21,0.8)",
                   color: "white",
                   backdropFilter: "blur(3px)",
-                  height: "40vh",
+                  minHeight: "40vh",
                 }}
               >
                 <CardActionArea>
@@ -158,7 +159,7 @@ export default function Test1() {
                   backgroundColor: "rgba(21,21,21,0.8)",
                   color: "white",
                   backdropFilter: "blur(3px)",
-                  height: "90%",
+                  minHeight: "90%",
                   borderRadius: "12px",
                 }}
               >
@@ -387,7 +388,7 @@ export default function Test1() {
             </div>
           </div>
         </main>
-
+        <br />
         <footer>
           <div id="Contact">
             <h3 style={{ width: "100%", textAlign: "Center" }}>Contact Me :</h3>
@@ -453,8 +454,24 @@ export default function Test1() {
                 </span>
               </button>
             </div>
-            <h3 style={{ width: "100%", textAlign: "center" }}>
-              © 2025 Ghaleb Shhab. All rights reserved.
+            <h3
+              style={{
+                width: "100%",
+                textAlign: "center",
+                display: "flex",
+                alignItems: "center",
+                alignContent: "center",
+                justifyContent: "center",
+              }}
+            >
+              <BlurText
+                text="© 2025 Ghaleb Shhab. All rights reserved."
+                delay={150}
+                animateBy="letters"
+                direction="top"
+                className="text-2xl mb-8"
+                style={{ marginLeft: "20%" }}
+              />
             </h3>
           </div>
         </footer>
