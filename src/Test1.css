@@ -232,6 +232,13 @@ main {
         height: auto;
         padding: 1rem 0;
     }
+     .Project{
+          justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+    }
     
     header .pages {
         margin-top: 0;
@@ -258,12 +265,40 @@ main {
         align-content: center;
         display: flex;
     }
+    .card{
+          justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio{
+          justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 480px) {
     header .pages button {
         padding: 5px 8px;
         font-size: 0.9rem;
+    }
+     .portfolio{
+          justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+      .card{
+          justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
     }
     .about{
         justify-content: center;
@@ -279,5 +314,12 @@ main {
     .photo {
         width: 100%;
         margin: 1rem 0;
+    }
+     .Project{
+          justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
     }
 }
