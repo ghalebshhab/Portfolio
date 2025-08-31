@@ -365,15 +365,12 @@ export default function Test1() {
                       {/* <div className="proj"></div> */}
                     </Typography>
                     <Typography gutterBottom variant="h5" component="div">
-                      Softians Website
+                      Guess what ???
                     </Typography>
-                    <Typography variant="body2">
-                      Softians App : Academic Website To help students to find
-                      the materilas of software major in Hashemite Unevirsity.
-                    </Typography>
+                    <Typography variant="body2">Comming Soon</Typography>
                   </CardContent>
                   <CardActions>
-                    <a href="https://softians-app.vercel.app/" target="blank">
+                    <a href="#Home" target="blank">
                       {" "}
                       <Button size="small">
                         {" "}
