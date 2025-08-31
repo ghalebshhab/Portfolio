@@ -1,9 +1,20 @@
 import "./App.css";
-import Home2 from "./Home2";
+import Parallax from "./Animation/Parallax";
+import Test1 from "./Test1";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+  BrowserRouter,
+} from "react-router-dom";
+// import PortfolioSite from "./PortfolioSite";
 function App() {
   return (
     <>
-      <Home2 />
+      <BrowserRouter>
+        <Test1 />
+      </BrowserRouter>
     </>
   );
 }

@@ -1,0 +1,61 @@
+/* Layout */
+html, body {
+  margin: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+}
+
+/* Header navigation */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav a hr {
+  border: none;
+  height: 2px;
+  background: black;
+  margin: 5px 0 0 0;
+}
+
+/* Scroll snap container */
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* Each page */
+.page {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+/* Different background colors for clarity */
+.home { background: #f5f5f5; }
+.about { background: #d0f0c0; }
+.portfolio { background: #add8e6; }
+.contact { background: #ffcccb; }

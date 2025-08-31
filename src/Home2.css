@@ -71,3 +71,6 @@ header .name{
     justify-content: space-evenly;
     margin-bottom: 5px;
 }
+.Pages h2 :hover{
+text-decoration: underline;
+}
